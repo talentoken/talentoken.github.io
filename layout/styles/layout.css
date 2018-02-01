@@ -9,6 +9,8 @@
 .row3, .row3 a{}
 .row4, .row4 a{}
 .row5, .row5 a{}
+.row6, .row6 a{}
+.row7, .row7 a{}
 
 
 /* Header
@@ -257,7 +259,8 @@ input:focus, textarea:focus, *:required:focus{border-color:#0069A8;}
 .row4{color:#BCBCBC; background-color:#1A1A1A;}
 .row4 a{color:#40B8FF;}
 .row5, .row5 a{color:#BCBCBC; background-color:#222222;}
-
+.row6{color:#BCBCBC; background-color:#1A1A1A;}
+.row7{color:#FFFFFF; background-color:#6b527b;}
 
 /* Header */
 #header #logo a{color:inherit;}
