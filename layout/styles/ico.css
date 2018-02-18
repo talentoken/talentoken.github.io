@@ -2,3 +2,358 @@
     width: 100%;
     height: auto;
 }
+
+#calculator {
+    padding: 5px 15px 15px 15px;
+    border: 2px solid #a0b4d5;
+    border-radius: 4px;
+}
+#calculator legend {
+    padding: 0 15px;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: bold;
+}
+#calculator .form-block {
+    display: flex;
+    align-items: center;
+}
+#calculator .form-block > * {
+    flex: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#calculator .form-block > #calculator-divider,
+#calculator .form-block > #calculator-img {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+#calculator-divider {
+    padding-top: 1.1em;
+    text-align: center;
+    color: #8e00da;
+    font-size: 36px;
+}
+#calculator-divider .icon-retweet::before {
+    margin: 0;
+}
+
+#calculator label {
+    display: block;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+#calculator .form-control,
+#calculator .form-addon {
+    padding: 5px 15px;
+    border-width: 2px 0 2px 2px;
+    border-color: #8fa1c1;
+    background: #546482;
+    color: #ffffff;
+    font-size: 36px;
+}
+#calculator .form-addon {
+    background: #4c81a5;
+}
+#calculator .form-control::placeholder,
+#calculator .form-addon::placeholder {
+    color: #cccccc;
+}
+#calculator .form-control:first-child,
+#calculator .form-addon:first-child {
+    border-radius: 4px 0 0 4px;
+}
+#calculator .form-control:last-child,
+#calculator .form-addon:last-child {
+    border-right-width: 2px;
+    border-radius: 0 4px 4px 0;
+}
+@media (max-width: 1023px) {
+    #calculator legend {
+        font-size: 20px;
+    }
+    #calculator-img {
+        display: none;
+    }
+    #calculator .form-control,
+    #calculator .form-addon {
+        font-size: 18px;
+    }
+    #calculator label {
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+    #calculator-divider {
+        padding-top: 0.7em;
+    }
+}
+@media (max-width: 767px) {
+    #calculator legend {
+        text-align: center;
+    }
+    #calculator .form-block > * {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #calculator .form-block {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    #calculator-divider {
+        padding-top: 0;
+    }
+}
+
+#calculator-summary {
+    display: flex;
+}
+#calculator-summary > * {
+    flex: 1;
+    padding: 5px 20px 0 20px;
+    border-right: 1px solid #8e98aa;
+    text-align: right;
+}
+#calculator-summary > *:first-child {
+    padding-left: 5px;
+}
+#calculator-summary > *:last-child {
+    padding-right: 5px;
+    border-right: none;
+}
+#calculator-summary p {
+    margin: 0;
+}
+#calculator-summary .highlighted {
+    color: #fff;
+    font-size: 200%;
+    font-weight: 600;
+}
+
+@media (max-width: 767px) {
+    #calculator-summary {
+        flex-direction: column;
+    }
+    #calculator-summary > * {
+        margin-bottom: 15px;
+    }
+    #calculator-summary > *:first-child {
+        padding-left: 20px;
+    }
+    #calculator-summary > *:last-child {
+        margin-bottom: 0;
+        padding-right: 20px;
+        border-right: 1px solid #8e98aa;
+    }
+    #calculator-summary .highlighted {
+        font-size: 130%;
+    }
+    #calculator-summary div {
+        display: flex;
+        align-items: center;
+    }
+    #calculator-summary p {
+        text-align: left;
+        width: 60%;
+    }
+    #calculator-summary p + p{
+        text-align: right;
+        width: 40%;
+    }
+}
+
+#contribution-block {
+    text-align: left;
+}
+#contribution-block p {
+    margin-bottom: 5px;
+}
+#contribution-block > :last-child {
+    margin-bottom: 0;
+}
+#contribution-block label {
+    color: #425372;
+    font-weight: bold;
+}
+#contribution-details {
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 10px;
+    background: #e7e8e9;
+}
+#contribution-details label {
+    margin-right: 0.5em;
+}
+#copy-address {
+    cursor: pointer;
+}
+@media (max-width: 767px) {
+    #contribution-details label {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+@font-face {
+    font-family: 'fontello';
+    src: url('./fonts/fontello.eot?50735241');
+    src: url('./fonts/fontello.eot?50735241#iefix') format('embedded-opentype'),
+    url('./fonts/fontello.woff?50735241') format('woff'),
+    url('./fonts/fontello.ttf?50735241') format('truetype'),
+    url('./fonts/fontello.svg?50735241#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.icon-retweet:before { content: '\e800'; } /* '' */
+.icon-docs:before { content: '\f0c5'; } /* '' */
+
+
+.input-group {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+.input-group .form-control {
+    flex: 1 1 auto;
+    width: 3em; /* will be stretched by flexbox anyway */
+}
+.input-group .form-addon {
+    padding: 0.75em;
+    border-style: solid;
+    border-color: #8fa1c1;
+    outline: none;
+    background: #ffffff;
+    color: #6b7a8f;
+}
+.gray .input-group .form-addon {
+    border-color: #dfdfdf;
+}
+.input-group .form-control,
+.input-group .form-addon {
+    border-width: 1px 0 1px 1px;
+}
+.input-group .form-control:last-child,
+.input-group .form-addon:last-child {
+    border-right-width: 1px;
+}
+
+input, button, textarea {
+    box-sizing: border-box;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    padding: 0.75em;
+    border: 1px solid #8fa1c1;
+    outline: none;
+    background: #ffffff;
+    color: #6b7a8f;
+}
+
+.gray input[type="text"],
+.gray input[type="email"],
+.gray input[type="password"],
+.gray textarea {
+    border-color: #dfdfdf;
+}
+.gray .input-group .form-addon {
+    border-color: #dfdfdf;
+}
+.gray {
+    background-color: #f3f4f6;
+}
+.user-step {
+    color: #425372;
+    font-weight: bold;
+}
+.blue .user-step {
+    color: #ffffff;
+}
+.blue .btn {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+.blue {
+    background-color: #425372;
+}
+.blue, .blue h1, .blue h2, .blue h3, .blue h4, .blue a {
+    color: #ffffff;
+}
+.blue .divider {
+    border-color: #68758e;
+}
+.blue .pagination-bullets .bullet {
+    background: #ffffff;
+    opacity: 0.4;
+}
+.blue .pagination-bullets .bullet.active {
+    opacity: 1;
+}
+
+.form-step {
+    padding: 15px 30px 0 30px;
+}
+.form-section {
+    padding: 20px 30px;
+}
+@media (max-width: 767px) {
+    .form-step {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .form-section {
+        padding: 15px;
+    }
+}
+
+.form-section p.highlighted {
+    color: #8e00da;
+}
+.form-section span.highlighted {
+    color: #8e00da;
+    font-weight: bold;
+}
+
+.form-step > * {
+    line-height: 1.15;
+}
