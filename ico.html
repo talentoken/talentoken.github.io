@@ -19,10 +19,14 @@
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+       
 
         gtag('config', 'UA-113175893-1');
+
     </script>
+
+    
+  
 
     <title>Talentoken - Integrated Token for Various Religions</title>
     <meta charset="utf-8">
@@ -75,11 +79,26 @@
     </nav>
 </div>
 
-<div class="wrapper row3">
-    <main class="hoc container clear">
+<div class="wrapper row3" >
+    <br>
+    <br>
+    <main class="hoc container clear" style="background-image: url('images/ico_back.png'); background-size:contain; background-repeat:no-repeat;" >
+        <article >
+            <div>
+                <p class="heading">Integrated Token for Various Religions</p>
+                <h2 class="heading">Talentoken</h2>
+            </div>
+            <a class="btn" href="#Buy">Buy Token</a>
+            <p>
+                <span>WITH</span>
+                <span id="bouns" style="color:dodgerblue ;font-weight: bold"></span>
+                <span >BONUS NOW!</span>
+            </p>
+        </article>
+        <br>
         <div class="ico_counter">
 
-            <div class="pure-g">
+            <div class="pure-g" style="float:left">
                 <div class="pure-u-1">
                     <div class="talent-countdown">
                         <p id="count-message"></p>
@@ -87,6 +106,9 @@
                     </div>
                 </div>
             </div>
+
+            <p style="clear:both"/>
+            <br>
 
             <div class="pure-g">
                 <div class="pure-u-1">
@@ -96,14 +118,13 @@
             </div>
 
         </div>
-
-        <br>
+    </main>
         <hr>
         <br>
-
-        <div class="form-step" style="
-    background-color: #425372;
-">
+</div>
+<div class="wrapper row4" style="background-color: #425372;" id="Buy">
+     <main class="hoc container clear">
+        <div class="form-step"  >
             <div id="calculator-block" class="form-section blue">
                 <p>
                     <span class="user-step">1.</span> Decide, using the calculator below, how many tokens you would like to buy
@@ -143,6 +164,17 @@
                 </div>
             </div>
 
+            <div id="calculator-summary" class="form-section blue" >
+                <div>
+                    <p>You'll receive Now!</p>
+                    <p class="highlighted" style="color:dodgerblue"><span class="tal-amount" id="tal-amount-now"></span> TAL</p>
+                </div>
+                <div>
+                    <p>For an amount of ETH</p>
+                    <p class="highlighted" style="color:dodgerblue"><span class="eth-amount" id="eth-amount-now"></span> ETH</p>
+                </div>
+            </div>
+
             <div id="contribution-block" class="form-section gray">
                 <p>
                     <span class="user-step">2.</span> From the ERC20 Token compatible wallet send your ETH to
@@ -164,11 +196,14 @@
                 </p>
             </div>
         </div>
+        </main>
+</div>
+<div  class="wrapper row3">
 
+    <main class="hoc container clear">
         <br>
         <hr>
         <br>
-
         <div class="center">
             <img class="ico_information" src="images/ico_information.png" alt="ICO Information">
         </div>
@@ -177,7 +212,8 @@
     </main>
 </div>
 
-<div class="wrapper row5">
+
+<div class="wrapper row6">
     <div id="copyright" class="hoc clear">
         <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="http://talentoken.info">Talent Coin Labs.</a></p>
     </div>
@@ -207,11 +243,11 @@
     web3 = new Web3(new Web3.providers.HttpProvider("https://api.myetherapi.com/eth"));
 
     var contractAddress = "0x3c478617c39e8ab8440db0b20e515f49136c2575";
-    var contract = web3.eth.contract([{"constant":false,"inputs":[],"name":"withdrawalAllInvester","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"withdrawalOwner","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"index","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"deadline","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"decimals","outputs":[{"name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"InvestorsProperty","outputs":[{"name":"payment","type":"uint256"},{"name":"reserved","type":"uint256"},{"name":"withdrawed","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_time","type":"uint256"}],"name":"addStartTime","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"bottom","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"hardcapReached","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"soldToken","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"ICOTokenAmount","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"tokenReward","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"softcapReached","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"startTime","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_time","type":"uint256"}],"name":"addDeadTime","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_time","type":"uint256"}],"name":"subDeadTime","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_time","type":"uint256"}],"name":"subStartTime","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"price","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"hardcap","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"start","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"ICOproceeding","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"withdrawal","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"getRemainingTimeEthToken","outputs":[{"name":"min","type":"uint256"},{"name":"shortage","type":"uint256"},{"name":"remainToken","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"fundedEth","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"marketingcap","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_new","type":"address"}],"name":"transferOwnership","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"softcap","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"InvestorsAddress","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"top","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[{"name":"_addressOfTokenContract","type":"address"}],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"payable":true,"stateMutability":"payable","type":"fallback"},{"anonymous":false,"inputs":[{"indexed":false,"name":"hardcap","type":"uint256"},{"indexed":false,"name":"deadline","type":"uint256"},{"indexed":false,"name":"tokenAmount","type":"uint256"},{"indexed":false,"name":"beneficiary","type":"address"}],"name":"ICOStart","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"backer","type":"address"},{"indexed":false,"name":"amount","type":"uint256"},{"indexed":false,"name":"token","type":"uint256"}],"name":"ReservedToken","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"beneficiary","type":"address"},{"indexed":false,"name":"hardcap","type":"uint256"},{"indexed":false,"name":"amountRaised","type":"uint256"},{"indexed":false,"name":"reached","type":"bool"},{"indexed":false,"name":"raisedToken","type":"uint256"}],"name":"CheckGoalReached","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"addr","type":"address"},{"indexed":false,"name":"amount","type":"uint256"},{"indexed":false,"name":"result","type":"bool"}],"name":"WithdrawalToken","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"addr","type":"address"},{"indexed":false,"name":"amount","type":"uint256"},{"indexed":false,"name":"result","type":"bool"}],"name":"WithdrawalEther","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"oldaddr","type":"address"},{"indexed":false,"name":"newaddr","type":"address"}],"name":"TransferOwnership","type":"event"}]).at(contractAddress);
+    var contract =web3.eth.contract([{"constant":false,"inputs":[],"name":"withdrawalAllInvester","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"withdrawalOwner","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"index","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"deadline","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"decimals","outputs":[{"name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"InvestorsProperty","outputs":[{"name":"payment","type":"uint256"},{"name":"reserved","type":"uint256"},{"name":"withdrawed","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_time","type":"uint256"}],"name":"addStartTime","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"bottom","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"hardcapReached","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"soldToken","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"ICOTokenAmount","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"tokenReward","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"softcapReached","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"startTime","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_time","type":"uint256"}],"name":"addDeadTime","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_time","type":"uint256"}],"name":"subDeadTime","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_time","type":"uint256"}],"name":"subStartTime","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"price","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"hardcap","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"start","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"ICOproceeding","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"withdrawal","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"getRemainingTimeEthToken","outputs":[{"name":"min","type":"uint256"},{"name":"shortage","type":"uint256"},{"name":"remainToken","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"fundedEth","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"marketingcap","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_new","type":"address"}],"name":"transferOwnership","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"softcap","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"InvestorsAddress","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"top","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[{"name":"_addressOfTokenContract","type":"address"}],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"payable":true,"stateMutability":"payable","type":"fallback"},{"anonymous":false,"inputs":[{"indexed":false,"name":"hardcap","type":"uint256"},{"indexed":false,"name":"deadline","type":"uint256"},{"indexed":false,"name":"tokenAmount","type":"uint256"},{"indexed":false,"name":"beneficiary","type":"address"}],"name":"ICOStart","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"backer","type":"address"},{"indexed":false,"name":"amount","type":"uint256"},{"indexed":false,"name":"token","type":"uint256"}],"name":"ReservedToken","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"beneficiary","type":"address"},{"indexed":false,"name":"hardcap","type":"uint256"},{"indexed":false,"name":"amountRaised","type":"uint256"},{"indexed":false,"name":"reached","type":"bool"},{"indexed":false,"name":"raisedToken","type":"uint256"}],"name":"CheckGoalReached","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"addr","type":"address"},{"indexed":false,"name":"amount","type":"uint256"},{"indexed":false,"name":"result","type":"bool"}],"name":"WithdrawalToken","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"addr","type":"address"},{"indexed":false,"name":"amount","type":"uint256"},{"indexed":false,"name":"result","type":"bool"}],"name":"WithdrawalEther","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"oldaddr","type":"address"},{"indexed":false,"name":"newaddr","type":"address"}],"name":"TransferOwnership","type":"event"}]).at(contractAddress);
     var deadline = contract.deadline();
     var startTime = contract.startTime();
-    var endTime = new Date(startTime*1000);
-
+    
+    var endTime = new Date(endTime*1000);
         function convertUnixTimeCallback(result){
             gtag('js', new Date(result));
             if(result.timestamp < startTime) {
@@ -222,6 +258,7 @@
             $("#count-message").text("ICO ends in:");
             endTime = new Date(deadline*1000);
             }
+            countStart();
         }
         $(function(){
             var baseUri = 'http://www.convert-unix-time.com/api?';
@@ -229,7 +266,12 @@
         });
 
     var fundedEth = Number(contract.fundedEth()['c'][0])/Math.pow(10,18);
-
+    if(fundedEth <= 300) {
+        $("#bouns").text("50%");
+    }
+    else{
+        $("#bouns").text("20%");
+    }
     $(function() {
         var ethToTal = 3426;
         var $address = $("#contribution-address");
@@ -266,32 +308,69 @@
             if (isNaN(amount)) {
                 return 0;
             }
-            return Math.round(amount * 1e12) / 1e12;
+            return parseFloat(Math.round(amount.toFixed(3) * 1e12) / 1e12);
         }
+
         var $eth = $("#eth-amount"),
             $tal = $("#tal-amount");
         if (!$eth.length || !$tal.length) return;
+
         $eth.on("input propertychange", function() {
             var eth = forceNumber($eth),
                 tal = convert("eth", eth);
             $tal.val(tal ? tal : "");
+
             $(".tal-amount").html(formatAmount(tal));
             $(".eth-amount").html(formatAmount(eth))
+        
+            if(fundedEth <= 300)
+            {
+                $("#tal-amount-now").html(formatAmount(tal*1.5));
+                $("#eth-amount-now").html(formatAmount(eth/1.5))
+            }
+            else if(fundedEth <= 2300)
+            {
+              $("#tal-amount-now").html(formatAmount(tal*1.2));
+                $("#eth-amount-now").html(formatAmount(eth/1.2))
+            }
         });
         $tal.on("input propertychange", function() {
             var tal = forceNumber($tal),
                 eth = convert("tal", tal);
             $eth.val(eth ? eth : "");
+
             $(".tal-amount").html(formatAmount(tal));
             $(".eth-amount").html(formatAmount(eth))
+            if(fundedEth <= 300)
+            {
+                $("#tal-amount-now").html(formatAmount(tal*1.5));
+                $("#eth-amount-now").html(formatAmount(eth/1.5))
+            }
+            else if(fundedEth <= 2300)
+            {
+              $("#tal-amount-now").html(formatAmount(tal*1.2));
+                $("#eth-amount-now").html(formatAmount(eth/1.2))
+            }
         });
         var eth = forceNumber($eth),
             tal = forceNumber($tal);
+
         $(".tal-amount").html(formatAmount(tal));
         $(".eth-amount").html(formatAmount(eth))
+             if(fundedEth <= 300)
+            {
+                $("#tal-amount-now").html(formatAmount(tal*1.5));
+                $("#eth-amount-now").html(formatAmount(eth/1.5))
+            }
+            else if(fundedEth <= 2300)
+            {
+              $("#tal-amount-now").html(formatAmount(tal*1.2));
+                $("#eth-amount-now").html(formatAmount(eth/1.2))
+            }
     });
 
-    $(window).on('load', function() {
+
+    function countStart() {
         var labels = ['weeks', 'days', 'hours', 'minutes', 'seconds'],
    
             template = _.template($('#talent-countdown-template').html()),
@@ -355,7 +434,7 @@
             }
     
         });
-    });
+    };
 
     $(function() {
         var line = new ProgressBar.Line('#progress', {
@@ -367,7 +446,7 @@
             text: {
                 value: fundedEth + ' ETH Sold',
                 style: {
-                    color: '#000',
+                    color: 'dodgerblue',
                     left: '50%',
                     top: '50%',
                 }
